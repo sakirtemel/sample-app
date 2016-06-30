@@ -1,1 +1,15 @@
 Home
+<table>
+  <% index = 0 %>
+  <% ENV.each do |key, value| %>
+    <tr>
+      <th>#<%= index += 1 %></th>
+      <td><%= key %></td>
+      <td>
+        <i>
+            <%= value %>
+        </i>
+      </td>
+    </tr>
+  <% end %>
+</table>
