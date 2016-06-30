@@ -1,4 +1,20 @@
 Home
+<h4>Database rows</h4>
+<table>
+  <% index = 0 %>
+  <% SampleModel.all.each do |sample_model| %>
+      <tr>
+        <th>#<%= index += 1 %></th>
+        <td><%= sample_model.id %></td>
+        <td>
+          <i>
+            <%= sample_model.column1 %>
+          </i>
+        </td>
+      </tr>
+  <% end %>
+</table>
+<h4>ENVs</h4>
 <table>
   <% index = 0 %>
   <% ENV.each do |key, value| %>
