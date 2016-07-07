@@ -25,6 +25,10 @@ It has
 
 `bundle exec sidekiq`
 
+Sidekiq monitor
+
+[https://deploy-sample-app-staging.herokuapp.com/sidekiq/](https://deploy-sample-app-staging.herokuapp.com/sidekiq/)
+
 
 ### Clockwork
 
