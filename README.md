@@ -11,6 +11,17 @@ It has
 - Figaro
 
 
+### TODO
+
+- Add rspec
+
+- Add capybara
+
+- Add phantomjs
+
+- Add a feature test which uses javascript
+
+
 ### App name
 
 `deploy-sample-app-staging`
