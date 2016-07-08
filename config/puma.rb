@@ -1,4 +1,4 @@
-workers Integer(ENV['WEB_CONCURRENCY'] || 2)
+workers Integer(ENV['WEB_CONCURRENCY'] || 1)
 threads_count = Integer(ENV['MAX_THREADS'] || 5)
 threads threads_count, threads_count
 
@@ -20,3 +20,6 @@ on_worker_boot do
 
   ActiveRecord::Base.establish_connection
 end
+
+# TODO: when concurrency enabled the spawned processes are spawned more than once
+# TODO: enable concurrency and fix the bug when concurrency needs to be tested.
